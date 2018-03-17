@@ -17,15 +17,16 @@ const calback=function (el,i,array){
   //      console.log(driver.name);
   //    });
   //  };
+const logDriversByHometown = function (drivers, hometown) {
+  drivers.sort(function (driver) {
+    if (driver.hometown===hometown){
+      console.log(driver.name);
+    }
+  });
+};
 
-  const logDriversByHometown = function (drivers, hometown) {
-    drivers.sort(function (driver) {
-      if (driver.hometown===hometown){
-        console.log(driver.name);
-      }
-    });
-  };
-
-  const driversByRevenue = function (drivers) {
-   return  drivers.sort(drivers.revenue);
-    };
+const driversByRevenue = function (drivers) {
+  return  drivers.sort(function (driver1,driver2){
+    return driver1.revenue - driver2.revenue;
+  });
+};
