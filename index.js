@@ -36,3 +36,11 @@ const driversByName = function (drivers) {
     return driver1.name.localeCompare(driver2.name);
   });
 };
+
+const reduceProductPrices = function (drivers) {
+  drverss.reduce(callback, 0);
+};
+
+const callback=  function (agg, el, i, arr) {
+return agg + el.price;
+};
