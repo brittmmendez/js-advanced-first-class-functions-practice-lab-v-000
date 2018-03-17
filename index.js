@@ -37,10 +37,8 @@ const driversByName = function (drivers) {
   });
 };
 
-const reduceProductPrices = function (drivers) {
-  drverss.reduce(callback, 0);
-};
-
-const callback=  function (agg, el, i, arr) {
-return agg + el.price;
+const totalRevenue = function (drivers) {
+  return drivers.reduce(function (total, currentDriver) {
+    return currentDriver.revenue + total;
+  }, 0);
 };
