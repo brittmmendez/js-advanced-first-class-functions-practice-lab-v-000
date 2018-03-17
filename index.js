@@ -38,8 +38,8 @@ const driversByName = function (drivers) {
 };
 
 const totalRevenue = function (drivers) {
-  return drivers.reduce(function (total, currentDriver) {
-    return currentDriver.revenue + total;
+  return drivers.reduce(function (totalRev, driver) {
+    return driver.revenue + totalRev;
   }, 0);
 };
 
