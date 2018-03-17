@@ -19,10 +19,15 @@ const calback=function (el,i,array){
   //  };
 
   const logDriversByHometown = function (drivers, hometown) {
-    drivers.forEach(function (driver) {
+    drivers.sort(function (driver) {
       if (driver.hometown===hometown){
         console.log(driver.name);
       }
     });
   };
+
+  const driversByRevenue = function (drivers) {
+    drivers.sort(drivers.revenue);
+    };
+    
   
