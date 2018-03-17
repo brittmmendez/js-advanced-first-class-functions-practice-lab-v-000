@@ -6,7 +6,7 @@ const calback=function (el,i,array){
   console.log(el.name);
 };
 
-//first way I solved it 
+//first way I solved it
   //const logDriverNames=function (el,i,array){
   //  console.log(el.name);
   //};
@@ -18,13 +18,11 @@ const calback=function (el,i,array){
   //    });
   //  };
 
-
-const logDriversByHometown = function (drivers, hometown) {
-  drivers.forEach(function (driver) {
-    if (driver.hometown===hometown;){
-    console.log(driver.name);
-    }
-  });
-};
-
+  const logDriversByHometown = function (drivers, hometown) {
+    drivers.forEach(function (driver) {
+      if (driver.hometown===hometown){
+        console.log(driver.name);
+      }
+    });
+  };
   
