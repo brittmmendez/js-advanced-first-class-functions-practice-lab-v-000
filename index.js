@@ -31,10 +31,3 @@ const driversByRevenue = function (drivers) {
   });
 };
 
-const driversByRevenue = function (drivers) {
-  return  drivers.sort(function (driver1,driver2){
-    return driver1.revenue - driver2.revenue;
-  });
-};
-
-
